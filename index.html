@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Text to Speech & AI Voice Generator | ElevenLabs</title>
+    <meta name="description" content="The most realistic voice AI platform. AI voice models and products powering millions of developers, creators, and enterprises.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-text">ElevenLabs</span>
+                </div>
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link">Creative Platform</a></li>
+                        <li><a href="#" class="nav-link">Agents Platform</a></li>
+                        <li><a href="#" class="nav-link">Developers</a></li>
+                        <li><a href="#" class="nav-link">Resources</a></li>
+                        <li><a href="#" class="nav-link">Enterprise</a></li>
+                        <li><a href="#" class="nav-link">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="nav-actions">
+                    <a href="#" class="nav-link">Log in</a>
+                    <a href="#" class="btn btn-primary">Sign up</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-announcement">
+                        <span class="announcement-icon">🎵</span>
+                        <span>Meet Eleven Music. Make the perfect song for any moment.</span>
+                        <a href="#" class="announcement-link">Learn more</a>
+                    </div>
+                    <h1 class="hero-title">The most realistic voice AI platform</h1>
+                    <p class="hero-subtitle">AI voice models and products powering millions of developers, creators, and enterprises. From low‑latency conversational agents to the leading AI voice generator for voiceovers and audiobooks.</p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-primary btn-large">Sign up</a>
+                        <a href="#" class="btn btn-secondary btn-large">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Section -->
+        <section class="demo-section">
+            <div class="container">
+                <div class="demo-tabs">
+                    <button class="demo-tab active" data-tab="text-to-speech">Text to Speech</button>
+                    <button class="demo-tab" data-tab="conversational-ai">Conversational AI</button>
+                    <button class="demo-tab" data-tab="music">Music</button>
+                    <button class="demo-tab" data-tab="speech-to-text">Speech to Text</button>
+                    <button class="demo-tab" data-tab="dubbing">Dubbing</button>
+                    <button class="demo-tab" data-tab="voice-cloning">Voice Cloning</button>
+                    <button class="demo-tab" data-tab="reader">ElevenReader</button>
+                </div>
+
+                <div class="demo-content">
+                    <div class="demo-panel active" id="text-to-speech">
+                        <div class="demo-interface">
+                            <div class="voice-samples">
+                                <h3>Explore samples</h3>
+                                <div class="voice-grid">
+                                    <div class="voice-card">
+                                        <div class="voice-info">
+                                            <span class="voice-name">Samara</span>
+                                            <span class="voice-description">Narrate a story</span>
+                                        </div>
+                                        <button class="play-btn" data-voice="samara">Play</button>
+                                    </div>
+                                    <div class="voice-card">
+                                        <div class="voice-info">
+                                            <span class="voice-name">2 speakers</span>
+                                            <span class="voice-description">Create a dialogue</span>
+                                        </div>
+                                        <button class="play-btn" data-voice="dialogue">Play</button>
+                                    </div>
+                                    <div class="voice-card">
+                                        <div class="voice-info">
+                                            <span class="voice-name">Announcer</span>
+                                            <span class="voice-description">Voiceover a game</span>
+                                        </div>
+                                        <button class="play-btn" data-voice="announcer">Play</button>
+                                    </div>
+                                    <div class="voice-card">
+                                        <div class="voice-info">
+                                            <span class="voice-name">Sergeant</span>
+                                            <span class="voice-description">Play a drill sergeant</span>
+                                        </div>
+                                        <button class="play-btn" data-voice="sergeant">Play</button>
+                                    </div>
+                                    <div class="voice-card">
+                                        <div class="voice-info">
+                                            <span class="voice-name">Spuds</span>
+                                            <span class="voice-description">Recount an old story</span>
+                                        </div>
+                                        <button class="play-btn" data-voice="spuds">Play</button>
+                                    </div>
+                                    <div class="voice-card">
+                                        <div class="voice-info">
+                                            <span class="voice-name">Jessica</span>
+                                            <span class="voice-description">Provide customer support</span>
+                                        </div>
+                                        <button class="play-btn" data-voice="jessica">Play</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="demo-text-area">
+                                <textarea placeholder="In the ancient land of Eldoria, where skies shimmered and forests, whispered secrets to the wind, lived a dragon named Zephyros. [sarcastically] Not the 'burn it all down' kind... [giggles] but he was gentle, wise, with eyes like old stars. [whispers] Even the birds fell silent when he passed." rows="4"></textarea>
+                                <div class="demo-controls">
+                                    <div class="character-count">294/1000</div>
+                                    <div class="voice-selector">
+                                        <span class="selected-voice">Samara</span>
+                                        <div class="language-selector">
+                                            <span class="flag">🇺🇸</span>
+                                            <span>English</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary demo-play-btn">Play</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demo-footer">
+                            <span class="demo-powered">Powered by Eleven v3 (alpha)</span>
+                            <div class="demo-actions">
+                                <span>Experience the full Audio AI platform</span>
+                                <a href="#" class="btn btn-primary">Sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted By Section -->
+        <section class="trusted-by">
+            <div class="container">
+                <h2>Trusted by leading developers and enterprises</h2>
+                <div class="logos-grid">
+                    <div class="logo-item">
+                        <span class="logo-text">Cisco</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-text">Epic Games</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-text">Twilio</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-text">Synthesia</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-text">Time</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-text">Chess.com</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-text">Telus Digital</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-text">Meesho</span>
+                    </div>
+                </div>
+                <div class="trusted-actions">
+                    <a href="#" class="btn btn-secondary">Talk to Sales</a>
+                    <a href="#" class="btn btn-link">Read Stories</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Section -->
+        <section class="music-section">
+            <div class="container">
+                <div class="music-content">
+                    <div class="music-text">
+                        <h2>Meet Eleven Music</h2>
+                        <p>Make the perfect song for any moment</p>
+                        <div class="music-samples">
+                            <div class="music-card">
+                                <span class="music-genre">Dreamy Indie Rock</span>
+                                <ul class="music-tags">
+                                    <li>Slow tempo</li>
+                                    <li>Atmospheric</li>
+                                    <li>Dreamy</li>
+                                </ul>
+                            </div>
+                            <div class="music-card">
+                                <span class="music-genre">Slow Latin Reggaeton</span>
+                                <ul class="music-tags">
+                                    <li>Reggaeton</li>
+                                    <li>Slow Groove</li>
+                                    <li>Charismatic vocals</li>
+                                </ul>
+                            </div>
+                            <div class="music-card">
+                                <span class="music-genre">Conscious Hip Hop</span>
+                                <ul class="music-tags">
+                                    <li>Conscious Rap</li>
+                                    <li>Jazzy</li>
+                                    <li>Experimental</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Try the AI Music Generator</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conversational AI Section -->
+        <section class="conversational-ai">
+            <div class="container">
+                <div class="section-content">
+                    <div class="section-text">
+                        <h2>Conversational AI</h2>
+                        <p>Speak to your customers with natural, human-sounding AI that feels truly personal.</p>
+                        <div class="section-actions">
+                            <a href="#" class="btn btn-primary">Discover Conversational AI</a>
+                            <a href="#" class="btn btn-secondary">Contact sales</a>
+                        </div>
+                    </div>
+                    <div class="section-visual">
+                        <div class="chat-interface">
+                            <div class="chat-input">
+                                <input type="text" placeholder="Enter your message">
+                                <button class="send-btn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- For Creators Section -->
+        <section class="for-creators">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">For CREATORS, MEDIA & ENTERTAINMENT</span>
+                    <h2>Generate high-quality AI audio for your audiobooks, videos and podcasts</h2>
+                </div>
+
+                <div class="creator-features">
+                    <div class="feature-tabs">
+                        <button class="feature-tab active" data-feature="audiobooks">Audiobooks</button>
+                        <button class="feature-tab" data-feature="voiceovers">Video voiceovers</button>
+                        <button class="feature-tab" data-feature="dubbing">Dubbed videos</button>
+                        <button class="feature-tab" data-feature="podcasts">Podcasts</button>
+                    </div>
+
+                    <div class="feature-content">
+                        <div class="feature-panel active" id="audiobooks">
+                            <div class="feature-text">
+                                <h3>Audiobooks</h3>
+                                <p>Create high-quality multi-character audiobooks. Upload your ePub or PDF, select your characters, direct the delivery and then publish.</p>
+                                <a href="#" class="btn btn-primary">Get started free</a>
+                                <div class="feature-testimonial">
+                                    <span class="testimonial-logo">TIME</span>
+                                    <span>uses Studio for high-quality, long-form Text to Speech at scale</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creators Showcase -->
+        <section class="creators-showcase">
+            <div class="container">
+                <h2>Used by millions of the best creators</h2>
+                <div class="creators-grid">
+                    <div class="creator-card">
+                        <div class="creator-info">
+                            <span class="creator-name">Andrew Huberman</span>
+                            <span class="creator-action">Create content faster with Voice Cloning</span>
+                        </div>
+                    </div>
+                    <div class="creator-card">
+                        <div class="creator-info">
+                            <span class="creator-name">The Colin & Samir Show</span>
+                            <span class="creator-action">Voice over your videos with Text to Speech</span>
+                        </div>
+                    </div>
+                    <div class="creator-card">
+                        <div class="creator-info">
+                            <span class="creator-name">Arianna Huffington</span>
+                            <span class="creator-action">Create AI audiobooks with Studio</span>
+                        </div>
+                    </div>
+                    <div class="creator-card">
+                        <div class="creator-info">
+                            <span class="creator-name">Drew Binsky</span>
+                            <span class="creator-action">Translate your content with Dubbing</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary">Get started</a>
+            </div>
+        </section>
+
+        <!-- For Developers Section -->
+        <section class="for-developers">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">For DEVELOPERS</span>
+                    <h2>Build the most advanced audio models into your product with our APIs and SDKs</h2>
+                </div>
+
+                <div class="api-features">
+                    <div class="api-grid">
+                        <div class="api-card">
+                            <h3>Text to Speech API</h3>
+                            <p>Independently rated the leading Text to Speech models. Choose Multilingual v2 for lifelike consistent speech; eleven_v3 for emotionally rich and expressive speech; or Flash v2.5 for the lowest latency. All support 29+ languages.</p>
+                            <div class="api-models">
+                                <div class="model-tag">Flash - 75ms latency for conversational usecases</div>
+                                <div class="model-tag">Multilingual - Best lifelike consistent speech</div>
+                                <div class="model-tag">v3 - Our expressive model yet</div>
+                            </div>
+                        </div>
+
+                        <div class="api-card">
+                            <h3>Speech to Text API</h3>
+                            <p>The most accurate ASR model. Low cost and supporting speaker diarization and character level timestamps.</p>
+                            <div class="api-stats">
+                                <div class="stat">
+                                    <span class="stat-number">98%</span>
+                                    <span class="stat-label">Accuracy</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">$0.22</span>
+                                    <span class="stat-label">/hour on the business plan</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="api-card">
+                            <h3>Voice Changer API</h3>
+                            <p>The leading Voice Changer model. Give your users full control over delivery of timing, inflection and emotion through voice control</p>
+                            <div class="api-stats">
+                                <div class="stat">
+                                    <span class="stat-number">1000+</span>
+                                    <span class="stat-label">Voices</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">29+</span>
+                                    <span class="stat-label">Languages</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="api-card">
+                            <h3>Conversational AI</h3>
+                            <p>Add voice to your agents on web, mobile or telephony in minutes with low latency and full configurability.</p>
+                            <div class="api-features-list">
+                                <span>Low latency</span>
+                                <span>Advanced turn taking</span>
+                                <span>Bring any LLM</span>
+                                <span>Function calling</span>
+                                <span>31 languages</span>
+                                <span>Take phone calls</span>
+                                <span>1000s of voices</span>
+                            </div>
+                            <button class="btn btn-secondary">Try a call</button>
+                        </div>
+                    </div>
+
+                    <div class="api-info">
+                        <h3>Easy to use APIs that scale</h3>
+                        <p>The leading AI audio models, robust, scalable and quick to integrate.</p>
+                        <div class="api-benefits">
+                            <div class="benefit">
+                                <span class="benefit-title">Python and TypeScript SDKs</span>
+                                <span class="benefit-desc">Get to production quickly</span>
+                            </div>
+                            <div class="benefit">
+                                <span class="benefit-title">GDPR & SOC II compliant</span>
+                                <span class="benefit-desc">Secure and compliant</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Read the docs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- For Enterprises Section -->
+        <section class="for-enterprises">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">For ENTERPRISES</span>
+                    <h2>Deliver new experiences and save costs for your enterprise</h2>
+                </div>
+
+                <div class="enterprise-use-cases">
+                    <div class="use-case-tabs">
+                        <button class="use-case-tab active" data-case="call-centers">Call Centers & Customer Service</button>
+                        <button class="use-case-tab" data-case="ai-assistants">AI Assistants</button>
+                        <button class="use-case-tab" data-case="education">Education Technology</button>
+                        <button class="use-case-tab" data-case="media-tools">Media Creation Tools</button>
+                    </div>
+
+                    <div class="use-case-content">
+                        <div class="use-case-panel active" id="call-centers">
+                            <div class="use-case-text">
+                                <h3>Call Centers & Customer Service</h3>
+                                <p>Power inbound and outbound AI calls at scale, for customer support, customer service, and sales. Deliver higher quality interactions at a lower cost.</p>
+                                <a href="#" class="btn btn-primary">Talk to Sales</a>
+                                <div class="case-study">
+                                    <span class="case-study-logo">Decagon</span>
+                                    <span>Decagon elevates customer experiences with AI voice agents</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investors Section -->
+        <section class="investors">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Our INVESTORS</span>
+                </div>
+                <div class="investors-grid">
+                    <div class="investor-logo">Andreessen Horowitz</div>
+                    <div class="investor-logo">ICONIQ</div>
+                    <div class="investor-logo">SEQUOIA</div>
+                    <div class="investor-logo">NEA</div>
+                    <div class="investor-logo">Telekom</div>
+                    <div class="investor-logo">Salesforce Ventures</div>
+                    <div class="investor-logo">NTT Docomo</div>
+                    <div class="investor-logo">WiL</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety & Research Section -->
+        <section class="safety-research">
+            <div class="container">
+                <div class="safety-research-grid">
+                    <div class="safety-card">
+                        <h3>AI safety at ElevenLabs</h3>
+                        <p>ElevenLabs is the leader in responsible use of AI audio through Moderation, Accountability and Provenance.</p>
+                        <a href="#" class="btn btn-primary">Learn more</a>
+                    </div>
+                    <div class="research-card">
+                        <h3>Breakthrough Research</h3>
+                        <p>ElevenLabs was the first company to cross the threshold of making human-like AI speech.</p>
+                        <a href="#" class="btn btn-secondary">About us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Updates Section -->
+        <section class="latest-updates">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Latest updates</h2>
+                    <a href="#" class="btn btn-link">All updates</a>
+                </div>
+                <div class="updates-grid">
+                    <div class="update-card">
+                        <div class="update-category">Safety</div>
+                        <h3>Safety framework for AI voice agents</h3>
+                        <p>AI voice agents are increasingly being used in customer service, entertainment, and enterprise applications. With this shift comes the need for clear safeguards to ensure responsible use.</p>
+                        <div class="update-meta">
+                            <span class="update-date">Aug 22, 2025</span>
+                            <span class="update-author">Louise Meyer-Schoenherr, Forward Development Engineer</span>
+                        </div>
+                    </div>
+                    <div class="update-card">
+                        <div class="update-category">Product</div>
+                        <h3>How we engineered RAG to be 50% faster</h3>
+                        <p>Tips from latency-sensitive RAG systems in production</p>
+                        <div class="update-meta">
+                            <span class="update-date">Aug 22, 2025</span>
+                            <span class="update-author">Michal Korbela, Software Engineer</span>
+                        </div>
+                    </div>
+                    <div class="update-card">
+                        <div class="update-category">Company</div>
+                        <h3>ElevenLabs Agents and the Candidate Experience</h3>
+                        <p>How ElevenLabs deploys its own agents in the process of hiring new team members.</p>
+                        <div class="update-meta">
+                            <span class="update-date">Aug 21, 2025</span>
+                            <span class="update-author">Tanner Skenderian, Talent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Create with the highest quality AI Audio</h2>
+                    <div class="cta-actions">
+                        <a href="#" class="btn btn-primary btn-large">Get started free</a>
+                        <p>Already have an account? <a href="#" class="link">Log in</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <ul>
+                        <li><a href="#">Text to Speech</a></li>
+                        <li><a href="#">Speech to Text</a></li>
+                        <li><a href="#">Voice Changer</a></li>
+                        <li><a href="#">Text to Sound Effects</a></li>
+                        <li><a href="#">Voice Cloning</a></li>
+                        <li><a href="#">Voice Isolator</a></li>
+                        <li><a href="#">AI Music Generator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Conversational AI</a></li>
+                        <li><a href="#">Dubbing Studio</a></li>
+                        <li><a href="#">Voice Library</a></li>
+                        <li><a href="#">Audio Native</a></li>
+                        <li><a href="#">ElevenStudios</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Voiceover Studio</a></li>
+                        <li><a href="#">ElevenReader</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#">For Enterprise</a></li>
+                        <li><a href="#">For Teams</a></li>
+                        <li><a href="#">For Creators</a></li>
+                        <li><a href="#">For Developers</a></li>
+                        <li><a href="#">For Startups</a></li>
+                        <li><a href="#">For Students</a></li>
+                        <li><a href="#">Publishing</a></li>
+                        <li><a href="#">Media and Entertainment</a></li>
+                        <li><a href="#">Conversational AI</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Earn As</h4>
+                    <ul>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Voice Actor</a></li>
+                        <li><a href="#">Data Partner</a></li>
+                        <li><a href="#">Commercial Partner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Product Guides</a></li>
+                        <li><a href="#">Help Centre</a></li>
+                        <li><a href="#">Languages</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Impact Program</a></li>
+                        <li><a href="#">Brand and Press Kit</a></li>
+                        <li><a href="#">Iconic Voices</a></li>
+                        <li><a href="#">Modern Slavery Policy</a></li>
+                        <li><a href="#">CCPA Notice</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="GitHub">GitHub</a>
+                    <a href="#" aria-label="YouTube">YouTube</a>
+                    <a href="#" aria-label="Discord">Discord</a>
+                </div>
+                <div class="footer-tagline">
+                    <p>Reach everyone with AI audio</p>
+                </div>
+                <div class="footer-legal">
+                    <span>© 2025 ElevenLabs</span>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Safety</a>
+                    <div class="compliance-badges">
+                        <span>SOC II</span>
+                        <span>GDPR</span>
+                        <span>CCPA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Voice Chat Widget -->
+    <div class="voice-chat-widget">
+        <div class="voice-chat-content">
+            <span class="voice-chat-flag">🇺🇸</span>
+            <span class="voice-chat-text">Voice chat</span>
+            <span class="voice-chat-powered">Powered by ElevenLabs Conversational AI</span>
+        </div>
+        <button class="voice-chat-toggle">Chat</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
